@@ -120,4 +120,18 @@ JDK 1.0 -> JDK 1.1 -> JDK 1.2 -> JDK 1.3 -> JDK 1.4 -> JDK 1.5 (Java 5)
     rand = Math.random()
     ```
 
-    
+
+
+
+run 옆의 박스 -> run configuration -> arguments -> program arguments -> apply -> run
+
+프로그램을 시작할 때 수행시키는 데이터
+
+
+
+## [프로그램 아규먼트] (명령행 데이터)
+
+- 프로그램 수행 시작시키면서 최초에 한번만 전달되는 데이터를 main(String[] args) 단, 무조건 문자열로 저장됨
+
+- 숫자를 사용할 경우 (정수) Inter.parslnt()를 이용해서, (실수일 경우) Double.parseDouble()를 이용해서 숫자로 변환하여 사용
+
