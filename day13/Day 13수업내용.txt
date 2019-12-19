@@ -1,0 +1,105 @@
+Day13
+
+  Collection API : 데이터들을 저장하여 사용하는 방의 역할을 하는 API
+
+
+   - 저장할 수 있는 데이터의 타입에 제한이 없다.
+   - 저장할 수 있는 데이터의 갯수에 제한이 없다.
+
+   List - 저장되는 데이터의 순서를 유지한다.
+            저장되는 데이터의 중복을 허용한다.
+            ArrayList, LinkedList, Vector
+
+   Set - 저장되는 데이터의 순서를 유지하지 않는다.
+            저장되는 데이터의 중복을 허용하지 않는다.
+            HashSet, LikedHashSet
+
+
+   Map - 데이터 이름과 데이터 값을 쌍으로 저장한다.
+            데이터 이름은 중복저장이 불가능하다.
+            (키)
+            key-value 쌍으로 데이터 저장
+           	HashMap, Hashtable
+
+   Collections 클래스 : Collection API 들을 도와주는 도우미 클래스
+
+
+    import java.util.LinkedList;
+    import java.util.Iterator;
+
+    --->
+
+    import java.util.*;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
