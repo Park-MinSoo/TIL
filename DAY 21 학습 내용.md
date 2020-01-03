@@ -69,7 +69,7 @@
 
   - Web Client 가 Web Server 에게 정보(페이지)를 요청할 때, 함께 전달 가능한 name 과 value로 구성되는 문자열
 
-  - ***W3C가 정의해 놓기를***
+  - ***W3C가 정의해 놓기를***  --------> Query String Encoding 규칙
 
     1. name = value 로 구성되어야 한다.
 
@@ -80,3 +80,50 @@
 [http://localhost:8000/edu/htmlexam/...?gname=%EA%B0%80&gage=10](http://localhost:8000/edu/htmlexam/...?gname=가&gage=10)
 
 [http://localhost:8000/edu/htmlexam/...?gname=%EA%B0%80+asd123&gage=10](http://localhost:8000/edu/htmlexam/...?gname=가+asd123&gage=10)
+
+[http://localhost:8000/edu/htmlexam/...?gname=%EA%B0%80&gage=1&gdate=2019-04-29](http://localhost:8000/edu/htmlexam/...?gname=가&gage=1&gdate=2019-04-29)
+
+
+
+- radio 와 check box
+
+```html
+성별을 선택하세요:<br>
+	남성<input type="radio" name="gender">
+<!-- radio는 동그라미로 표현되며 여러가지중 하나 선택하게 하는것이다.  -->
+	여성<input type="radio" name="gender">
+	<br>
+	좋아하는 음식을 선택하세요:<br>
+	떡볶이<input type="checkbox" name="food">
+<!-- checkbox는 동그라미로 표현되며 여러개를 선택하게 하는것이다.  -->
+	오뎅<input type="checkbox" name="food">
+	튀김<input type="checkbox" name="food">
+	순대<input type="checkbox" name="food">
+	김밥<input type="checkbox" name="food">
+
+```
+
+[http://localhost:8000/edu/htmlexam/...?gname=%E3%85%87&gage=1&gdate=2020-01-23&gender=on&food=on&food=on&food=on&food=on&food=on](http://localhost:8000/edu/htmlexam/...?gname=ㅇ&gage=1&gdate=2020-01-23&gender=on&food=on&food=on&food=on&food=on&food=on)
+
+--> 이렇게 되면 남성인지 여성인지, 떡볶이인지 순대인지 등 구분을 못하고 그저 on으로만 나타나게된다.
+
+sol)  Value 값을 지정해 주어 무엇이 선택되었는지 알려줘야 한다.
+
+```html
+	성별을 선택하세요:<br>
+	남성<input type="radio" name="gender" value="male">
+	여성<input type="radio" name="gender" value="female">
+	<br>
+	좋아하는 음식을 선택하세요:<br>
+	떡볶이<input type="checkbox" name="food" value="떡볶이">
+	오뎅<input type="checkbox" name="food" value="오뎅">
+	튀김<input type="checkbox" name="food" value="튀김">
+	순대<input type="checkbox" name="food" value="순대">
+	김밥<input type="checkbox" name="food" value="김밥">
+```
+
+[http://localhost:8000/edu/htmlexam/...?gname=%E3%85%87%E3%84%B4%E3%85%87&gage=1&gdate=2020-01-09&gender=male&food=%ED%8A%80%EA%B9%80&food=%EC%88%9C%EB%8C%80&food=%EA%B9%80%EB%B0%A5](http://localhost:8000/edu/htmlexam/...?gname=ㅇㄴㅇ&gage=1&gdate=2020-01-09&gender=male&food=튀김&food=순대&food=김밥)
+
+- radio나 checkbox의 경우 value 사용이 필수이다.
+- IE는 HTML5를 완벽히 지원하지 않는다.
+
