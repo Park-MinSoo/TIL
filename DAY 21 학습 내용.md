@@ -127,3 +127,28 @@ sol)  Value 값을 지정해 주어 무엇이 선택되었는지 알려줘야 �
 - radio나 checkbox의 경우 value 사용이 필수이다.
 - IE는 HTML5를 완벽히 지원하지 않는다.
 
+```html
+<mark>	</mark> - 형광펜처럼 하이라이트 해준다.
+<strong>	</strong> - 굵은 글씨 처리 해준다.
+<p>		</p> - P태그, 하나의 단락으로 쭉~ 묵여서 출력하여준다.
+<figure>	</figure> - 이미지
+<figcaption>	</figcaption> - 이미지에 대한 설명을 넣어 줄 수 있다.
+
+<textarea rows="num" cols="num">	</textarea> 
+----> 여러행으로 구성되는 글 입력 상자를 만들어준다. (범위를 넘어 갈 경우 자동으로 스크롤바가 생성되어지게 된다.)
+
+<select>	</select>
+-----> full down 형식으로 선택할 수 있는 항목들을 보여주는 것이다. (하나만 선택 가능하다.)
+```
+
+
+
+- HTML5의 문서구조
+
+```html
+<!DOCTYPE HTML> -> html문서라고 선언해준다.
+```
+
+- 테이블에서 여러개의 셀을 병합하는 방법
+  - 열을 병합 - colspan
+  - 행을 병랍 - ropwspan
